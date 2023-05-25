@@ -23,13 +23,13 @@ public class Ex1 {
         System.out.print("Digite quanto você recebe por hora trabalhada: ");
         double valor_hora;
         for(valor_hora = input.nextDouble(); valor_hora < 0.0; valor_hora = input.nextDouble()) {
-            System.out.printf("Valor inválido. Por favor, digite quanto você recebe por hora trabalhada: ");
+            System.out.print("Valor inválido. Por favor, digite quanto você recebe por hora trabalhada: ");
         }
 
         System.out.print("Digite o número de horas trabalhadas no mês: ");
         double total_horas;
         for(total_horas = input.nextDouble(); total_horas < 0.0; total_horas = input.nextDouble()) {
-            System.out.printf("Valor inválido. Por favor, digite o número de horas trabalhadas no mês: ");
+            System.out.print("Valor inválido. Por favor, digite o número de horas trabalhadas no mês: ");
         }
 
         double salario_bruto = valor_hora * total_horas;
@@ -77,6 +77,6 @@ public class Ex1 {
         System.out.printf("%-45s%s\n",print_inss1, print_inss2);
         System.out.printf("%-45s%s\n",print_fgts1,print_fgts2);
         System.out.printf("%-45s%s\n",print_total_desc1,print_total_desc2);
-        System.out.printf("%-45s%s\n",print_salario_liquido1,print_salario2);
+        System.out.printf("%-45s%s\n",print_salario_liquido1,print_salario_liquido2);
     }
 }

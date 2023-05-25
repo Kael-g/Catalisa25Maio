@@ -17,16 +17,16 @@ public class Ex2 {
         Scanner input = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("0.#");
 
-        System.out.printf("Quantos litros foram vendidos? ");
+        System.out.print("Quantos litros foram vendidos? ");
         double litros;
         for (litros = input.nextDouble(); litros < 0; litros = input.nextDouble()){
-            System.out.printf("A quantidade não pode ser negativa, insira um valor válido: ");
+            System.out.print("A quantidade não pode ser negativa, insira um valor válido: ");
         }
 
-        System.out.printf("Qual o tipo de combustível? Digite A para álcool e G para gasolina: ");
+        System.out.print("Qual o tipo de combustível? Digite A para álcool e G para gasolina: ");
         String tipo;
         for (tipo = input.next(); !tipo.equalsIgnoreCase("A") && !tipo.equalsIgnoreCase("G"); tipo = input.next()){
-            System.out.printf("Opção inválida, digite A para álcool ou G para gasolina :");
+            System.out.print("Opção inválida, digite A para álcool ou G para gasolina :");
         }
 
         double valor_com_desconto = 0;
@@ -57,7 +57,7 @@ public class Ex2 {
                 }
                 break;
             default:
-                System.out.printf("Opção inválida, mas não vai cair aqui nunca porque foi feita a verificação lá em cima :)");
+                System.out.print("Opção inválida, mas não vai cair aqui nunca porque foi feita a verificação lá em cima :)");
         }
 
         System.out.printf("\n\nR$ %,.2f por %s litros de %s (desconto de %s aplicado).",valor_com_desconto,df.format(litros),tipo_escolhido,desconto);

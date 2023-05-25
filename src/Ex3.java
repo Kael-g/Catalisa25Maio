@@ -15,7 +15,7 @@ public class Ex3 {
         Scanner input = new Scanner(System.in);
 
         int participacao = 0;
-        String resposta = "";
+        String resposta;
 
         System.out.print("Preciso te fazer algumas perguntas sobre o crime ocorrido com Fulano de Tal.\n");
 
