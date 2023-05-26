@@ -58,25 +58,34 @@ public class Ex1 {
 //        System.out.printf("Total de descontos : R$ %s\n", dinheiro.format(imposto_de_renda+inss));
 //        System.out.printf("Salário Líquido : R$ %s\n", dinheiro.format(salario_bruto - imposto_de_renda - inss));
 
+//          **********ALINHADO, MAS TRABALHOSO*********
+//        String print_salario1 = "Salário bruto: (" + inteiros.format(valor_hora) + " * " + inteiros.format(total_horas) + ")";
+//        String print_ir1 = "(-) IR (" + desconto_ir + ")";
+//        String print_inss1 = "(-) INSS (10%)";
+//        String print_fgts1 = "FGTS (11%)";
+//        String print_total_desc1 = "Total de descontos";
+//        String print_salario_liquido1 = "Salário Líquido";
 
-        String print_salario1 = "Salário bruto: (" + inteiros.format(valor_hora) + " * " + inteiros.format(total_horas) + ")";
-        String print_ir1 = "(-) IR (" + desconto_ir + ")";
-        String print_inss1 = "(-) INSS (10%)";
-        String print_fgts1 = "FGTS (11%)";
-        String print_total_desc1 = "Total de descontos";
-        String print_salario_liquido1 = "Salário Líquido";
-        String print_salario2 = ": R$ " + dinheiro.format(salario_bruto);
-        String print_ir2 = ": R$ " + dinheiro.format(imposto_de_renda);
-        String print_inss2 = ": R$ " + dinheiro.format(inss);
-        String print_fgts2 = ": R$ " + dinheiro.format(fgts);
-        String print_total_desc2 = ": R$ " + dinheiro.format(imposto_de_renda+inss);
-        String print_salario_liquido2 = ": R$ " + dinheiro.format(salario_bruto - imposto_de_renda - inss);
+//        String print_salario2 = ": R$ " + dinheiro.format(salario_bruto);
+//        String print_ir2 = ": R$ " + dinheiro.format(imposto_de_renda);
+//        String print_inss2 = ": R$ " + dinheiro.format(inss);
+//        String print_fgts2 = ": R$ " + dinheiro.format(fgts);
+//        String print_total_desc2 = ": R$ " + dinheiro.format(imposto_de_renda+inss);
+//        String print_salario_liquido2 = ": R$ " + dinheiro.format(salario_bruto - imposto_de_renda - inss);
+//
+//        System.out.printf("\n\n%-45s%s\n",print_salario1, print_salario2);
+//        System.out.printf("%-45s%s\n",print_ir1,print_ir2);
+//        System.out.printf("%-45s%s\n",print_inss1, print_inss2);
+//        System.out.printf("%-45s%s\n",print_fgts1,print_fgts2);
+//        System.out.printf("%-45s%s\n",print_total_desc1,print_total_desc2);
+//        System.out.printf("%-45s%s\n",print_salario_liquido1,print_salario_liquido2);
 
-        System.out.printf("\n\n%-45s%s\n",print_salario1, print_salario2);
-        System.out.printf("%-45s%s\n",print_ir1,print_ir2);
-        System.out.printf("%-45s%s\n",print_inss1, print_inss2);
-        System.out.printf("%-45s%s\n",print_fgts1,print_fgts2);
-        System.out.printf("%-45s%s\n",print_total_desc1,print_total_desc2);
-        System.out.printf("%-45s%s\n",print_salario_liquido1,print_salario_liquido2);
+        System.out.printf("\n\n%-45s%s\n",("Salário bruto: (" + inteiros.format(valor_hora) + " * " + inteiros.format(total_horas) + ")"),(": R$ " + dinheiro.format(salario_bruto)));
+        System.out.printf("%-45s%s\n",("(-) IR (" + desconto_ir + ")"),(": R$ " + dinheiro.format(imposto_de_renda)));
+        System.out.printf("%-45s%s\n",("(-) INSS (10%)"),(": R$ " + dinheiro.format(inss)));
+        System.out.printf("%-45s%s\n",("FGTS (11%)"),(": R$ " + dinheiro.format(fgts)));
+        System.out.printf("%-45s%s\n",("Total de descontos"),(": R$ " + dinheiro.format(imposto_de_renda+inss)));
+        System.out.printf("%-45s%s\n",("Salário Líquido"),(": R$ " + dinheiro.format(salario_bruto - imposto_de_renda - inss)));
+
     }
 }
